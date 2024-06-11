@@ -1,1 +1,1 @@
-export * from "../../build/BirrToken/tact_BirrToken";
+export * from "../build/tact_BirrToken";

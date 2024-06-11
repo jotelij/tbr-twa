@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 export default function RootLayout() {
     return (
-        <Container as="main">
+        <>
             {/* <AppBar /> */}
             <NetworkBadge />
             <Box px="20px" py="20px" backgroundColor="#f7f9fb" min-height="100vh">
@@ -24,11 +24,13 @@ export default function RootLayout() {
                             </Flex>
                         </Flex>
 
-                        <Outlet />
+                        <Container as="main" my="20px">
+                            <Outlet />
+                        </Container>
                     </Box>
                 </Box>
                 <Footer />
             </Box>
-        </Container>
+        </>
     )
 }

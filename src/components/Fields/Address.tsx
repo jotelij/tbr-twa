@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Address } from "@ton/core";
+import { Address } from "ton-core";
 import { FieldProps } from "../ActionCard";
 import { BaseField } from "./Field";
 

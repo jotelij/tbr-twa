@@ -2,7 +2,7 @@ import { Box, Button, Card, CardBody, CardFooter, CardHeader, Flex, Heading, HSt
 import React from 'react'
 import { useBirrToken } from '../hooks/userBirrToken';
 import { useTonConnect } from '../hooks/useTonConnect';
-import { fromNano } from '@ton/core';
+import { fromNano } from 'ton-core';
 
 export default function BalanceCard() {
     const { connected, wallet } = useTonConnect();

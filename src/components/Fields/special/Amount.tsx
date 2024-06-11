@@ -4,7 +4,7 @@
 
 import { Box, Button, Flex, Input, InputGroup, InputRightElement, Text } from "@chakra-ui/react";
 import React, { ChangeEvent, useEffect, useState } from "react";
-import { toNano } from "@ton/core";
+import { toNano } from "ton-core";
 import { FieldProps } from "../../ActionCard";
 
 export function AmountField(props: FieldProps) {

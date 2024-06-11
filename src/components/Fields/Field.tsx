@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Input, InputGroup, InputRightElement, Text } from "@chakra-ui/react";
 import React, { ChangeEvent, useEffect, useState } from "react";
-import { Address, Cell, Dictionary, beginCell, toNano } from "@ton/core";
+import { Address, Cell, Dictionary, beginCell, toNano } from "ton-core";
 import { FieldProps, ParamValue } from "../ActionCard";
 
 export interface BaseFieldProps {

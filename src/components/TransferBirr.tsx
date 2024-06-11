@@ -10,11 +10,18 @@ import {
 } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form'
 import { AddressField, AmountField } from './Fields';
-import {  ParamValue } from './ActionCard';
+import { ParamValue } from './ActionCard';
+import { useState } from 'react';
 
 
 export default function TranferBirr() {
     const { connected, wallet } = useTonConnect();
+
+    const [tonAmount, setTonAmount] = useState("0.01");
+    const [tonRecipient, setTonRecipient] = useState(
+        "EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c"
+    );
+
 
     const {
         handleSubmit,
@@ -41,7 +48,7 @@ export default function TranferBirr() {
                 fieldName='Receiver'
                 optional={false}
                 sendParam={function (name: string, value: ParamValue, correct: boolean): void {
-                    console.log("aaddd: ", value);
+                    console.log(`name: ${name} - value: ${value} - correct: ${correct} `);
                 }}
             />
             <AmountField
@@ -49,7 +56,7 @@ export default function TranferBirr() {
                 fieldName='Amount'
                 optional={false}
                 sendParam={function (name: string, value: ParamValue, correct: boolean): void {
-                    console.log("aaddd: ", value);
+                    console.log(`name: ${name} - value: ${value} - correct: ${correct} `);
                 }}
             />
             <Button mt={4} colorScheme='teal' isLoading={isSubmitting} type='submit'>

@@ -1,1 +1,1 @@
-export * from '../../build/BirrToken/tact_JettonDefaultWallet';
+export * from '../build/tact_JettonDefaultWallet';
