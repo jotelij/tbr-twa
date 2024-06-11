@@ -6,7 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import { BirrToken, JettonData, Mint } from "../contracts/birrToken";
 import { JettonDefaultWallet, TokenTransfer } from "../contracts/jettonDefaultWallet";
 import { useEffect, useState } from 'react';
-import { JettonMetaDataKeys, readJettonMetadata } from "../utils/metadata-helpers";
+import { JettonMetaDataKeys, readJettonMetadata } from "../utils/metadataHelpers";
 // import { JettonMaster } from "ton";
 // import { jett } from "@ton/crypto";
 
